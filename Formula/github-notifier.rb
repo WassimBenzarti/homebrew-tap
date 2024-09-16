@@ -11,13 +11,17 @@ class GithubNotifier < Formula
     strategy :github_latest
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "e2f1ca3721368cc939f501a0a8fe3df0d50693107820b8d66a97e3ca691df568"
+  end
+
   depends_on "go" => :build
 
   def install
     chdir "cli" do
       system "go", "build", *std_go_args(ldflags: "-s -w")
     end
-    bin.install "bin/github-notifier"
+    # bin.install bin/"github-notifier"
     generate_completions_from_executable(bin/"github-notifier", "completion")
   end
 
