@@ -13,7 +13,7 @@ class GithubNotifier < Formula
 
   bottle do
     root_url "https://github.com/WassimBenzarti/github-notifier"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "62b9f674aac1b5d34994e3c2014701fd328c1dab695782ae61f7b4ae915e5517"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "a6562043881773aa226ca9487817e79233de4c91c01b1a58e3857643094ba37a"
   end
 
   depends_on "go" => :build
