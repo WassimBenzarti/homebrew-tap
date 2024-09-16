@@ -11,6 +11,11 @@ class GithubNotifier < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://github.com/WassimBenzarti/github-notifier"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "62b9f674aac1b5d34994e3c2014701fd328c1dab695782ae61f7b4ae915e5517"
+  end
+
   depends_on "go" => :build
 
   def install
