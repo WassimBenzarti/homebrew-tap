@@ -15,8 +15,8 @@ class GithubNotifier < Formula
 
   def install
     system "go", "build", "-C", "cli/", *std_go_args(ldflags: "-s -w")
-    bin.install "bin/github-notifier"
-    generate_completions_from_executable(bin/"github-notifier", "completion")
+    bin.install "cli/github-notifier"
+    generate_completions_from_executable(cli/"github-notifier", "completion")
   end
 
   test do
