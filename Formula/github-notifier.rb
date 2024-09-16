@@ -12,8 +12,8 @@ class GithubNotifier < Formula
   end
 
   bottle do
-    root_url "https://github.com/WassimBenzarti/github-notifier"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "62b9f674aac1b5d34994e3c2014701fd328c1dab695782ae61f7b4ae915e5517"
+    root_url "https://github.com/WassimBenzarti/homebrew-tap/releases/download/github-notifier-0.0.2"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "44631e6ab51ab6255413d78038662859a03751392157bd13f8e89b18025c92f7"
   end
 
   depends_on "go" => :build
