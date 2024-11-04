@@ -1,8 +1,8 @@
 class GithubNotifier < Formula
   desc "Get notified about review requests, new reviews, and check statuses"
   homepage "https://github.com/WassimBenzarti/github-notifier"
-  url "https://github.com/WassimBenzarti/github-notifier/archive/refs/tags/v0.0.2.tar.gz"
-  sha256 "d1aabc827b58b0722d4230a6c0593f6156b03a6104e3bbb633822ee68fff4a50"
+  url "https://github.com/WassimBenzarti/github-notifier/archive/refs/tags/v0.0.3.tar.gz"
+  sha256 "dc61447c80c64cf3b4dcbf9dad355df262d7dfcc50d9028076f12f8fea2b484c"
   license "MIT"
   head "https://github.com/WassimBenzarti/github-notifier.git", branch: "main"
 
